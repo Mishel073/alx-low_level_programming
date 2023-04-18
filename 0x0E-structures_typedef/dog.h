@@ -1,28 +1,24 @@
-#include <stdio.h>
-#ifndef DOG_H
-#define DOG_H
+#ifndef _HEADER_
+#define _HEADER_
 
-/*
- * struct dog - dog information
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
+/**
+ * struct dog - Dog information
+ * @name: The name of the dog.
+ * @age: The age of the dog.
+ * @owner: The owner of the dog.
  *
- * * Description: Longer description
+ * Description: The attributes of a dog.
  */
-
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-
 };
 
 /**
- * dog_t - typedef for struct dog
+ * dog_t - Typedef for dog structure
  */
-
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
